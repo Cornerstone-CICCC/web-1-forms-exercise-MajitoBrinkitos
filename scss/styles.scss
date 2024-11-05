@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -11,4 +15,70 @@ form {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: 20px auto;
-}
+
+  fieldset {
+    border: solid 1px lightgray;
+    border-radius: 5px;
+
+    legend {
+      border: solid 1px lightgray;
+      border-radius: 5px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin: 10px;
+        margin-left: 0;
+        display: inline-flex;
+
+        input {
+          border: solid 1px lightgray;
+          border-radius: 5px;
+          padding: 5px;
+        }
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-left: 10px;
+      }
+
+      #favcolor {
+        width: 100%;
+        height: 40px;
+      }
+
+      #hobby {
+        width: 25%;
+      }
+
+      #mySlide {
+        width: 25%;
+      }
+
+      #contact {
+        width: 25%;
+      }
+
+      #docs {
+        border: solid 1px lightgray;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      button{
+        background-color: #017bfe;
+        color: whitesmoke;
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+        width: 20%;
+      }
+
+      }
+    }
+  }
+
