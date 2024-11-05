@@ -9,6 +9,134 @@
 <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
         <!-- FORM FIELDS HERE -->
+
+        <!--Personal Information-->
+         <fieldset>
+            <legend>Personal Information</legend>
+            <!--Name-->
+            <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autocomplete="off" placeholder="Full Name" required>
+            </div>
+            <!--Email-->
+            <div class="field">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" pattern="[A-Za-z0-9]" autocomplete="off" placeholder="Email" required>
+            </div>
+            <!--Password-->
+            <div class="field">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" pattern="[A-Za-z0-9] {12}" autocomplete="off" placeholder="Enter your password" required>
+            </div>
+            <!--Date of Birth-->
+            <div class="field">
+                <label for="datebirth">Date of Birth:</label>
+                <input type="date" id="datebirth" name="datebirth">
+            </div>
+         </fieldset>
+
+         <br>
+
+         <!--Preferences-->
+         <fieldset>
+            <legend>Preferences</legend>
+            <!--Favorite Color-->
+            <div class="field">
+                <label for="favcolor">Favorite Color:</label>
+                <input type="color" name="favcolor" id="favcolor">
+            </div>
+            <!--Hobby-->
+            <div class="field">
+                <label for="hobby">Hobby</label>
+                <input type="text" list="hobby-list" name="hobby" id="hobby">
+                <datalist id="hobby-list">
+                    <option value="drawing"></option>
+                    <option value="swimming"></option>
+                    <option value="dancing"></option>
+                </datalist>
+            </div>
+            <!--Experience Level-->
+            <div class="field">
+                <label for="experience">Experience Level:</label>
+                <input type="range" min="1" max="100" value="0" class="slider" id="mySlide" >
+            </div>
+         </fieldset>
+
+         <br>
+
+         <!--Contact Preference-->
+         <fieldset>
+            <legend>Contact Preference</legend>
+            <!--Contact Method-->
+            <div class="field">
+                <label for="contact">Preferred Contact Method:</label>
+                <input type="text" list="contact-list" name="contact" id="contact" placeholder="Email">
+                <datalist id="contact-list">
+                    <option value="Email"></option>
+                    <option value="Phone"></option>
+                    <option value="Mail"></option>
+                </datalist>
+            </div>
+            <!--Subscribe-->
+            <div class="field">
+                <label for="subscribe">Subscribe to Newsletter
+                    <input type="checkbox" name="subscribe" id="subscribe" value="Newsletter">
+                </label>
+            </div>
+         </fieldset>
+
+         <br>
+
+         <!--Preferences-->
+         <fieldset> 
+            <legend>Preferences</legend> 
+            <div class="field"> 
+                    <label for="female">
+                        <input type="radio" name="female" value="female" id="female">Female
+                    </label>
+                    <label for="male">
+                        <input type="radio" name="male" value="male" id="male">Male
+                    </label>
+                    
+                    <label for="other">
+                        <input type="radio" name="other" value="other" id="other">Other
+                    </label>
+                    
+                </div>
+            </div> 
+        </fieldset>
+
+        <br>
+
+        <!--More Information-->
+        <fieldset>
+            <legend>More Information</legend>
+            <div class="field">
+                <label for="info">Bio:</label>
+                <textarea id="bio" name="feedback" rows="3" cols="40" placeholder>
+
+                </textarea>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <!--Upload Documents-->
+        <fieldset>
+            <legend>Upload Documents</legend>
+            <div class="field">
+                <label for="docs">Resume and other certificates:</label>
+                    <input id="docs" type="file" name="file">
+            </div>
+        </fieldset>
+
+        <br>
+
+        <!--Submission-->
+        <fieldset>
+            <legend>Submission</legend>
+            <button type="submit">Submit</button>   <button type="reset">Submit</button>
+        </fieldset>
     </form>
 </body>
 </html>
